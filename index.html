@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI — Intelligent Chat Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <header class="header">
+        <div class="header-left">
+            <div class="logo" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#fff"/><path d="M7 12h10M7 8h10M7 16h6" stroke="#111" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="title">
+                <h1>  Nova AI</h1>
+                <p>Your intelligent chat companion</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <button id="clearBtn" class="icon-btn" title="Clear chat">Clear</button>
+            <button id="themeToggle" class="icon-btn" title="Toggle theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="chat-box" id="chatBox" role="log" aria-live="polite">
+        <div class="message ai-message">
+            <div class="avatar">Nova</div>
+            <div class="message-content">Hello 👋 I am Nova AI. Ask me anything.</div>
+        </div>
+    </main>
+
+    <form class="input-area" id="inputForm">
+        <input type="text" id="prompt" placeholder="Ask Nova anything..." autocomplete="off" aria-label="Message input">
+        <button type="submit" id="sendBtn" class="send-btn">Send</button>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
