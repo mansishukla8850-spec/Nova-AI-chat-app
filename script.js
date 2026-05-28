@@ -7,7 +7,7 @@ const themeToggle = document.getElementById('themeToggle');
 
 // ================= OPENROUTER API KEY =================
 
-const API_KEY = "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";
+const API_KEY = "YOUR_OPENROUTER_API_KEY";
 
 
 // ================= CREATE MESSAGE =================
